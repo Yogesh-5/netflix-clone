@@ -1,0 +1,200 @@
+/* universal selector for setting box size and padding margin zero
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body background image and use linear gradient for particular transparent */
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.678)),
+    url(../images/IN-en-20220829-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  background-image: 100% 100%;
+}
+
+/* ind-accordian which is used for the faq area which consists of hover and text-success */
+
+.ind-accordion:hover .d-none {
+  display: flex !important;
+  cursor: pointer;
+}
+
+.ind-accordion .text-success {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid green;
+  padding: 0.5em;
+}
+
+.ind-accordion .text-success::after {
+  content: "\f107";
+  font-family: FontAwesome;
+}
+
+.header-area {
+  margin-left: 200px;
+}
+
+/* this is the sign button for header area */
+
+.sign-btn {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  margin-left: 50px;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+}
+
+/* this area is for the particular select dropdown*/
+
+.select {
+  background-color: transparent;
+  margin-left: 850px;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+}
+
+/* this area is fo the select bottom parts css */
+
+.select-bottom {
+  background-color: transparent;
+
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 120px;
+  height: 60px;
+}
+.unlimited {
+  font-size: 45px;
+  /* top:160px;
+    right:450px; */
+}
+
+/*  */
+
+.sign-in {
+  margin-left: 0em;
+}
+
+.get {
+  background-color: rgb(226, 8, 19);
+  white-space: nowrap;
+}
+.email-sec {
+  height: 60px;
+}
+.watch {
+  border: 3px solid grey;
+}
+
+.enjoy {
+  margin-block: auto;
+}
+
+.english {
+  justify-content: flex-end;
+  margin-left: 50em;
+}
+
+.selectmenu {
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+}
+
+.select1 {
+  background-color: grey;
+}
+/* 
+.sign-in {
+  margin-right: 20em;
+} */
+
+/* .fa-plus {
+  margin-left: 500px;
+} */
+
+/* this is the  area  of css mobile response where we use our mobile css */
+@media screen and (min-device-width: 320px) and (max-device-width: 668px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* this area is for select css */
+
+  .select {
+    background-color: transparent;
+    margin-left: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 80px;
+    margin-right: 5px;
+    height: 30px;
+  }
+
+  /* this is css for button */
+  .sign-btn {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    margin-left: 0px;
+
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+  }
+
+  .first {
+    display: flex;
+    align-items: flex-end;
+  }
+  .unlimited {
+    font-size: 2em;
+    /* top:160px;
+  right:450px; */
+  }
+  .get {
+    background-color: rgb(226, 8, 19);
+    white-space: nowrap;
+  }
+
+  /* this is the accordian area within css part  */
+
+  .ind-accordion:hover .d-none {
+    display: flex !important;
+    cursor: pointer;
+  }
+
+  .ind-accordion .text-success {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid green;
+    padding: 0.5em;
+  }
+
+  .ind-accordion .text-success::after {
+    content: "\f107";
+    font-family: FontAwesome;
+  }
+
+  .english {
+    justify-content: flex-end;
+    margin: auto;
+    margin-top: 5em;
+  }
+
+  .netflix > img {
+    width: 80%;
+    height: 50%;
+  }
+
+  .selectmenu {
+    border-radius: 3px;
+    padding: 0.2em;
+  }
+
+  .sign-in {
+    margin-left: 0.6em;
+  }
+}
